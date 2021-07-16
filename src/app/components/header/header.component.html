@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button
+        slot="start"
+        *ngIf="canBack"
+        defaultHref="/home"
+        text=""
+        color="primary"
+        mode="md"
+      ></ion-back-button>
+      <ion-title class="ion-text-capitalize ion-text-center">{{
+        titulo
+      }}</ion-title>
+      <!-- <ion-icon
+        slot="end"
+        name="cart-outline"
+        color="primary"
+        class="ion-padding"
+      ></ion-icon> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

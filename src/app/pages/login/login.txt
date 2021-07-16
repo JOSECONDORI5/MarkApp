@@ -1,0 +1,40 @@
+<app-header titulo="MarkApp Login"></app-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label class="ion-text-center"
+        ><img src="assets/icon/favicon.gif" class="circle-avatar"
+      /></ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input inputmode="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item> </ion-list
+  ><br />
+  <ion-button expand="full" color="primary" routerLink="inicio"
+    >Login</ion-button
+  >
+  <a class="loss" routerLink="/reset" routerDirection="forward"
+    >reset password</a
+  ><br />
+
+  <!-- LOGIN FACEBOOK AND GOOGLE-->
+  <p class="ion-text-center">LOGIN WITH</p>
+  <ion-row>
+    <ion-col size="6">
+      <ion-fab-button color="danger" class="ion-float-right">
+        <ion-icon color="light" name="logo-google"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-fab-button color="tertiary" class="ion-float-left">
+        <ion-icon color="light" name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

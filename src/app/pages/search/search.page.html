@@ -1,0 +1,12 @@
+<app-header titulo="Search"></app-header>
+
+<ion-content>
+  <ion-searchbar
+    placeholder="Filter Apio"
+    inputmode="decimal"
+    type="decimal"
+    (ionChange)="onSearchChange($event)"
+    [debounce]="250"
+    showCancelButton="always"
+  ></ion-searchbar>
+</ion-content>
